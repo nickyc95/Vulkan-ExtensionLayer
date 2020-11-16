@@ -83,8 +83,7 @@ script:
 deploy:
   provider: releases
   api_key: $DEPLOY_TOKEN
-  file: *
+  file: "libVkLayer_khronos_timeline_semaphore.so"
   skip_cleanup: true
-  file_glob: true
   on:
     tags: false
