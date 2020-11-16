@@ -81,10 +81,12 @@ script:
     fi
     
 deploy:
+  script:
+  - cd ..
   provider: releases
   api_key: $DEPLOY_TOKEN
   file_glob: true
-  file: **/*
+  file: build/**/*
   skip_cleanup: true
   on:
     tags: false
