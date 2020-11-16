@@ -85,4 +85,4 @@ deploy:
   file: "libVkLayer_khronos_timeline_semaphore.so"
   skip_cleanup: true
   on:
-    tags: true
+    tags: false
