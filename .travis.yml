@@ -85,6 +85,6 @@ deploy:
   api_key: $DEPLOY_TOKEN
   file: *
   skip_cleanup: true
-   file_glob: true
+  file_glob: true
   on:
     tags: false
