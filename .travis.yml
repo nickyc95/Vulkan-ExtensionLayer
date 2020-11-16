@@ -75,6 +75,7 @@ script:
     python ../scripts/update_deps.py
     cmake -C helper.cmake ..
     cmake --build . -- -j$core_count
+    cd ..
   - |
     if [[ "${TRAVIS_OS_NAME}" != "osx" ]]; then
       set +e
